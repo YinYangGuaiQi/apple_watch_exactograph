@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Only deploy the clock folder
-          path: '.'
+          path: '.clock'
 
       - name: Deploy to GitHub Pages
         id: deployment
