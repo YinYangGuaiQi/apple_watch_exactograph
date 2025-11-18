@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Modular Reversed Outer Ring Clock</title>
+  <style>
+    @font-face {
+      font-family: "PingFangMedium";
+      src: url("./PingFangMedium.ttf") format("truetype");
+    }
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+<canvas id="clock"></canvas>
+
+<!-- Modules -->
+<script type="module">
+  import { initClock } from "./clock.js";
+  initClock(document.getElementById("clock"));
+</script>
+
+</body>
+</html>
